@@ -1,0 +1,36 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build and Run (WSL)",
+      "type": "shell",
+      "command": "g++",
+      "args": [
+        "main.cpp",
+        "layers/application.cpp",
+        "layers/transport.cpp",
+        "layers/network.cpp",
+        "layers/link.cpp",
+        "-o",
+        "simulator",
+        "&&",
+        "./simulator"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}",
+        "shell": {
+          "executable": "wsl"
+        }
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    }
+  ]
+}
+
+
+
+  
