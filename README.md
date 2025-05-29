@@ -1,7 +1,7 @@
 # network-protocol
 
 # How To Run:
-- Install WSL. Install the g++ on WSL.
+- Install WSL. Install the g++ compiler on WSL.
 - Clone the project.
 - Open the project in vscode.
 - Use command **shift+ctrl+B** to build the project and run it. The output will be printed to vscode's console.
