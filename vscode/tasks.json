@@ -1,0 +1,22 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Build and Run",
+        "type": "shell",
+        "command": "bash",
+        "args": [
+          "-c",
+          "\"g++ main.cpp layers/application.cpp layers/transport.cpp layers/network.cpp layers/link.cpp -o simulator && ./simulator\""
+        ],
+        "options": {
+          "cwd": "${workspaceFolder}"
+        },
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": []
+      }
+    ]
+  }
